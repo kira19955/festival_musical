@@ -23,3 +23,23 @@
      @content;     
     }
 }
+
+@mixin contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* a los mixins se les puede pasar parametros como si fueran funciones en JS
+y poner valores por defecto tambien en caso de no pasar un valor */ 
+@mixin grid($columnas, $gap: 5rem){   
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $gap;
+}
+
+@mixin resetear-lista{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
