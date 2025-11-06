@@ -51,6 +51,7 @@
 
     &-body{
         background-color: v.$blanco;
+        min-height:26rem;
         ul{
             @include m.resetear-lista;
             li{
