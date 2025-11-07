@@ -95,7 +95,7 @@ function resaltarEnlace(){
             const sectionTop = section.offsetTop
             const sectionHeight = section.clientHeight
 
-            if(window.screenY >= (sectionTop - sectionHeight / 3)){
+            if(window.scrollY >= (sectionTop - sectionHeight / 3)){
                     actual = section.id
             }
         })
